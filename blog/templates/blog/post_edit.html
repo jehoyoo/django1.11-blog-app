@@ -5,7 +5,9 @@
     <!--Cross Site Script 방지-->
     {% csrf_token%}
     <!--Cross Site Script 방지-->
-    {{ form.as_p}}
-    <button type="submit" class="save btn btn-default">Save</button>
+    <table class="table table-bordered table-hover">
+        {{ form.as_p}}
+    </table>
+    <button type="submit" class="save btn btn-primary">Save</button>
 </form>
 {%endblock%}
